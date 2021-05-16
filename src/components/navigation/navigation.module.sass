@@ -1,0 +1,28 @@
+.navigation
+  width: 100%
+  height: 100%
+  background-color: #FFE4D6
+  padding-top: 120px
+  .link
+    cursor: pointer
+    text-decoration: none
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-bottom: 80px
+    position: relative
+    &:last-child
+      margin-bottom: 0
+    & > svg > g path, & > svg path
+      fill: #E1AA98
+    &:hover
+      & > svg > g path, & > svg path
+        fill: #8964D7
+      &:after
+        content: ''
+        position: absolute
+        width: 2px
+        height: 100%
+        top: 0
+        left: 0
+        background-color: #8964D7
